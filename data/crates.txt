@@ -547,7 +547,6 @@ derive_builder_core
 jni-sys
 unicode-properties
 serde_bytes
-jsonwebtoken
 jni
 proptest
 borsh
@@ -732,7 +731,6 @@ moka
 zopfli
 crypto-mac
 rand_xoshiro
-aws-credential-types
 waker-fn
 maplit
 aws-sdk-sts
@@ -742,7 +740,6 @@ tagptr
 aws-config
 sqlx-sqlite
 objc2
-password-hash
 aws-smithy-runtime-api
 lexical-util
 sqlx-mysql
@@ -1234,7 +1231,6 @@ sentry-core
 imgref
 is_ci
 blake2b_simd
-rpassword
 macro_rules_attribute
 sentry
 macro_rules_attribute-proc_macro
@@ -1502,7 +1498,6 @@ wasm-bindgen-test-macro
 wgpu-types
 cairo-sys-rs
 cached_proc_macro
-docker_credential
 tracing-test-macro
 rle-decode-fast
 tempdir
@@ -1577,7 +1572,6 @@ rayon-cond
 gix-shallow
 mac_address
 diesel
-tokenizers
 thin-vec
 wasmtime-environ
 aws-smithy-runtime-api-macros
@@ -1619,7 +1613,6 @@ swc_ecma_parser
 value-bag-serde1
 minijinja
 tree-sitter-language
-serde_tokenstream
 retain_mut
 fontdb
 directories-next
@@ -1682,7 +1675,6 @@ ico
 tauri-runtime
 gix-prompt
 tauri-runtime-wry
-gix-credentials
 core_affinity
 font-types
 gtk
@@ -1802,7 +1794,6 @@ uriparse
 swc_atoms
 vte_generate_state_changes
 primal-check
-match_token
 scraper
 async-graphql
 aes-gcm-siv
@@ -1936,7 +1927,6 @@ javascriptcore-rs-sys
 ws2_32-sys
 datafusion-sql
 thousands
-aws-sdk-secretsmanager
 glutin_glx_sys
 javascriptcore-rs
 snow

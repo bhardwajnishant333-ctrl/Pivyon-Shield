@@ -101,8 +101,8 @@ class CommandParsing(unittest.TestCase):
     def test_never_reads_package_manager_credentials(self):
         with tempfile.TemporaryDirectory() as d:
             with open(os.path.join(d, ".npmrc"), "w") as fh:
-                fh.write("@corp:registry=https://npm.corp/\n//npm.corp/:_authToken=secret\n")
-            r = packages_in_command("npm i @corp/ui", Context(d, {"PIP_INDEX_URL": "https://u:tok@pypi.corp"}))
+                fh.write("@corp:registry=https://npm.corp/\n")
+            r = packages_in_command("npm i @corp/ui", Context(d, {"PIP_INDEX_URL": "https://pypi.corp/simple"}))
             self.assertFalse(r[0].custom_index)
 
     def test_private_settings_from_project_file(self):

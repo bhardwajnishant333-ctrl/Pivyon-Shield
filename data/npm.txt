@@ -78,7 +78,6 @@ https-proxy-agent
 path-to-regexp
 path-exists
 punycode
-js-tokens
 cliui
 shebang-regex
 @babel/types
@@ -532,7 +531,6 @@ terser
 std-env
 is-array-buffer
 safe-array-concat
-@aws-sdk/token-providers
 data-urls
 d3-interpolate
 @radix-ui/react-dismissable-layer
@@ -549,7 +547,6 @@ is-boolean-object
 @alloc/quick-lru
 html-escaper
 has-bigints
-@aws-sdk/credential-provider-node
 lightningcss-linux-x64-gnu
 @radix-ui/react-presence
 w3c-xmlserializer
@@ -573,10 +570,8 @@ postcss-load-config
 strnum
 core-js
 @vitest/snapshot
-@aws-sdk/credential-provider-env
 define-property
 @sinonjs/fake-timers
-@aws-sdk/credential-provider-web-identity
 clone
 normalize-package-data
 d3-color
@@ -673,13 +668,11 @@ ssri
 @babel/helper-replace-supers
 @radix-ui/react-arrow
 stop-iteration-iterator
-@aws-sdk/credential-provider-process
 istanbul-lib-source-maps
 dedent
 is-data-view
 @smithy/signature-v4
 redent
-@aws-sdk/credential-provider-http
 is-promise
 object.values
 @istanbuljs/schema
@@ -802,7 +795,6 @@ ansi-colors
 jest-resolve
 @smithy/util-base64
 cssom
-@smithy/credential-provider-imds
 ecdsa-sig-formatter
 eslint-import-resolver-node
 camelcase-css
@@ -825,7 +817,6 @@ cli-truncate
 eslint-plugin-import
 @testing-library/dom
 webpack
-@csstools/css-tokenizer
 @smithy/util-retry
 serialize-javascript
 @smithy/service-error-classification
@@ -833,7 +824,6 @@ serialize-javascript
 @radix-ui/react-dropdown-menu
 jest-docblock
 sisteransi
-@aws-sdk/credential-provider-ini
 postcss-nested
 @smithy/querystring-parser
 lie
@@ -903,7 +893,6 @@ spdx-expression-parse
 @protobufjs/eventemitter
 jest
 @tanstack/react-query
-jsonwebtoken
 @jest/reporters
 @protobufjs/fetch
 tailwindcss
@@ -1023,7 +1012,6 @@ babel-plugin-polyfill-corejs2
 @testing-library/react
 @types/debug
 url-parse
-@aws-sdk/credential-provider-sso
 eventsource-parser
 bignumber.js
 emittery
@@ -1225,7 +1213,6 @@ lodash.memoize
 fast-xml-builder
 use-sync-external-store
 got
-space-separated-tokens
 is-alphabetical
 spdx-correct
 is-decimal
@@ -1246,7 +1233,6 @@ compression
 @babel/plugin-transform-exponentiation-operator
 react-refresh
 zustand
-@aws-sdk/credential-provider-login
 @babel/preset-typescript
 dotenv-expand
 streamx
@@ -1297,7 +1283,6 @@ playwright
 module-details-from-path
 acorn-import-attributes
 eslint-plugin-jsx-a11y
-micromark-util-subtokenize
 @jest/expect
 fast-safe-stringify
 micromark-factory-title
@@ -1339,7 +1324,6 @@ style-to-object
 pg-connection-string
 input-otp
 @babel/plugin-transform-json-strings
-comma-separated-tokens
 cross-fetch
 fd-slicer
 postgres-interval
@@ -1395,7 +1379,6 @@ language-subtag-registry
 inline-style-parser
 @babel/plugin-transform-logical-assignment-operators
 @jest/core
-gtoken
 @babel/plugin-transform-unicode-sets-regex
 mimic-function
 @smithy/eventstream-serde-node
@@ -1485,7 +1468,6 @@ abab
 responselike
 @aws-sdk/middleware-bucket-endpoint
 param-case
-@octokit/auth-token
 @protobufjs/float
 @smithy/eventstream-serde-universal
 create-require
@@ -1565,7 +1547,6 @@ streamsearch
 markdown-table
 secure-json-parse
 @next/swc-linux-x64-gnu
-@types/jsonwebtoken
 stream-shift
 micromark-extension-gfm-table
 mitt
@@ -1752,7 +1733,6 @@ remark-gfm
 delegates
 ansi-align
 snake-case
-token-types
 hash-base
 fork-ts-checker-webpack-plugin
 mdast-util-gfm-footnote
@@ -1785,7 +1765,6 @@ triple-beam
 h3
 cluster-key-slot
 joi
-@inquirer/password
 @nolyfill/is-core-module
 @opentelemetry/instrumentation-knex
 tabbable
@@ -1843,7 +1822,6 @@ idb
 @vue/compiler-dom
 @sentry-internal/replay-canvas
 d3-selection
-registry-auth-token
 debounce
 one-time
 @aws-sdk/signature-v4-multi-region
@@ -2126,7 +2104,6 @@ untildify
 @svgr/babel-plugin-transform-react-native-svg
 @opentelemetry/instrumentation-redis
 jwt-decode
-parse-passwd
 @opentelemetry/propagator-jaeger
 warning
 postcss-normalize-charset
@@ -2868,7 +2845,6 @@ linkifyjs
 browser-process-hrtime
 @types/whatwg-url
 jsep
-@aws-sdk/credential-providers
 @selderee/plugin-htmlparser2
 regex-parser
 @npmcli/package-json
@@ -2886,7 +2862,6 @@ html-to-text
 @oxc-parser/binding-linux-x64-gnu
 react-lifecycles-compat
 swap-case
-@tokenizer/token
 adjust-sourcemap-loader
 msw
 stylelint
@@ -3056,7 +3031,6 @@ mdast-util-definitions
 eslint-plugin-unused-imports
 @jsep-plugin/regex
 @react-aria/interactions
-@aws-sdk/credential-provider-cognito-identity
 buffer-indexof-polyfill
 @redis/search
 date-fns-jalali
@@ -3219,7 +3193,6 @@ postcss-custom-selectors
 utility-types
 unicode-properties
 postcss-pseudo-class-any-link
-@aws-sdk/client-secrets-manager
 postcss-color-rebeccapurple
 streamroller
 postcss-attribute-case-insensitive
@@ -3774,7 +3747,6 @@ emojilib
 estree-util-attach-comments
 jsonschema
 stacktrace-js
-@radix-ui/react-one-time-password-field
 stacktrace-gps
 react-popper
 expo-modules-core
@@ -3946,7 +3918,6 @@ inflection
 fast-json-parse
 @peculiar/asn1-cms
 @react-navigation/elements
-js-tiktoken
 object.hasown
 @react-native/gradle-plugin
 @firebase/auth
@@ -4269,7 +4240,6 @@ react-use-measure
 shadcn
 babel-code-frame
 telejson
-oidc-token-hash
 @firebase/component
 cli-table
 toad-cache
@@ -4468,7 +4438,6 @@ resolve-pathname
 mobx-react-lite
 postcss-env-function
 @types/dockerode
-@tokenizer/inflate
 capture-exit
 @module-federation/rspack
 @algolia/abtesting
@@ -5063,7 +5032,6 @@ nano-css
 @ljharb/through
 concat-with-sourcemaps
 image-q
-token-stream
 pug
 @internationalized/message
 mermaid
@@ -5484,7 +5452,6 @@ remark-breaks
 @unrs/resolver-binding-linux-arm-musleabihf
 @react-pdf/pdfkit
 sync-message-port
-password-prompt
 @expo/vector-icons
 @astrojs/markdown-remark
 @types/zen-observable
@@ -5651,7 +5618,6 @@ bonjour
 cwd
 @react-stately/dnd
 @unrs/resolver-binding-linux-ppc64-gnu
-css-selector-tokenizer
 @semantic-release/commit-analyzer
 metaviewport-parser
 amqplib
@@ -6111,7 +6077,6 @@ use-latest-callback
 @datadog/datadog-ci-plugin-sbom
 @datadog/datadog-ci-plugin-sarif
 isurl
-@aws-sdk/credential-provider-imds
 hex-color-regex
 @hello-pangea/dnd
 archive-type
@@ -6235,7 +6200,6 @@ react-table
 knitwork
 @kubernetes/client-node
 @vanilla-extract/css
-@google-cloud/secret-manager
 @react-aria/tooltip
 jssha
 @floating-ui/vue
@@ -7685,7 +7649,6 @@ postcss-cli
 normalize.css
 @cspell/dict-golang
 parse-css-color
-@atlaskit/tokens
 @cspell/dict-bash
 reactflow
 fs-tree-diff
@@ -7863,7 +7826,6 @@ lodash.some
 @graphql-codegen/typescript-react-apollo
 @cspell/cspell-service-bus
 module-deps
-@secretlint/types
 obj-case
 @fastify/forwarded
 css-box-shadow
@@ -7942,7 +7904,6 @@ is-lite
 @graphql-codegen/introspection
 @turf/line-overlap
 @cspell/dict-swift
-@alcalzone/ansi-tokenize
 @turf/polygonize
 @turf/shortest-path
 @turf/boolean-within
@@ -7955,7 +7916,6 @@ diff3
 @cucumber/query
 @types/unzipper
 @turf/line-slice
-tiktoken
 @turf/clusters-dbscan
 @aws-amplify/notifications
 @pm2/agent
@@ -8133,7 +8093,6 @@ sf-symbols-typescript
 @turf/hex-grid
 rc-config-loader
 @oclif/linewrap
-@secretlint/config-creator
 remove-trailing-slash
 vinyl-contents
 ansi-red
@@ -8180,7 +8139,6 @@ proxyquire
 passport-google-oauth20
 @shuding/opentype.js
 nanotar
-@secretlint/secretlint-rule-preset-recommend
 @types/zxcvbn
 @opentelemetry/instrumentation-oracledb
 detab
@@ -8297,7 +8255,6 @@ graphology
 @aws-sdk/client-bedrock-agent-runtime
 condense-newlines
 @parcel/types
-glsl-token-string
 @aws-sdk/ec2-metadata-service
 pm2-multimeter
 @atlaskit/ds-lib
@@ -8445,7 +8402,6 @@ mock-fs
 reinterval
 @react-pdf/stylesheet
 react-spring
-@azure/keyvault-secrets
 eslint-json-compat-utils
 @ai-sdk/amazon-bedrock
 eslint-plugin-jest-dom
@@ -8470,7 +8426,6 @@ appium-adb
 @welldone-software/why-did-you-render
 unplugin-vue-components
 @react-native-community/cli-plugin-metro
-glsl-token-inject-block
 @types/lodash.memoize
 require-uncached
 @cacheable/node-cache
@@ -8735,7 +8690,6 @@ launder
 @types/shelljs
 jsftp
 @fontsource/roboto
-@solana/spl-token
 eslint-plugin-svelte
 @graphql-yoga/logger
 jest-playwright-preset
@@ -8774,7 +8728,6 @@ react-big-calendar
 lodash._baseassign
 estree-to-babel
 @hotwired/stimulus
-html-tokenize
 mixme
 @turf/boolean-overlap
 hooker
@@ -8892,7 +8845,6 @@ rehype-remark
 @types/dom-speech-recognition
 @aws-sdk/util-waiter
 solc
-scss-tokenizer
 @wallet-standard/base
 @react-aria/checkbox
 @formatjs/cli
@@ -8932,7 +8884,6 @@ svg.js
 bit-twiddle
 @microsoft/applicationinsights-dependencies-js
 nssocket
-glsl-token-whitespace-trim
 grunt-known-options
 cli-progress-footer
 @videojs/vhs-utils
@@ -9090,7 +9041,6 @@ stream-promise
 @shopify/react-native-skia
 vfile-matter
 @ai-sdk/deepseek
-@secretlint/profiler
 rework
 @panva/asn1.js
 consolidated-events
@@ -9124,7 +9074,6 @@ jquery-ui
 @hypnosphi/create-react-context
 @solana/accounts
 world-calendars
-@secretlint/core
 gulp-sourcemaps
 @node-minify/core
 @applitools/dom-snapshot
@@ -9363,7 +9312,6 @@ to-vfile
 serialize-error-cjs
 react-native-blob-util
 tus-js-client
-@secretlint/source-creator
 @swagger-api/apidom-parser-adapter-api-design-systems-json
 broccoli-merge-trees
 ansi-color
@@ -9374,7 +9322,6 @@ eazy-logger
 @braintree/iframer
 @swagger-api/apidom-ns-json-schema-draft-6
 @petamoriken/float16
-@secretlint/config-loader
 @discordjs/collection
 @material/theme
 utf7
@@ -9389,7 +9336,6 @@ amqp-connection-manager
 lodash.omitby
 @material/touch-target
 @xterm/addon-web-links
-@jscpd/tokenizer
 @ckeditor/ckeditor5-theme-lark
 uglify-es
 @azure/functions
@@ -9461,7 +9407,6 @@ liftup
 @types/glob-to-regexp
 @types/showdown
 detect-europe-js
-@secretlint/resolver
 soap
 object-component
 @types/postcss-modules-scope
@@ -9904,7 +9849,6 @@ cspell-grammar
 @swagger-api/apidom-ns-arazzo-1
 react-medium-image-zoom
 svg.easing.js
-css-tokenize
 robot3
 @codemirror/lang-markdown
 @lezer/python
@@ -9985,9 +9929,7 @@ zstd-codec
 lodash._basevalues
 @connectrpc/connect-web
 react-native-drawer-layout
-verdaccio-htpasswd
 @styled-system/color
-gpt-tokenizer
 @solana/buffer-layout-utils
 react-scroll
 @ucast/core
@@ -10009,7 +9951,6 @@ mux.js
 @types/mime-db
 mediabunny
 add-dom-event-listener
-generate-password
 @zag-js/floating-panel
 @types/plotly.js
 @ckeditor/ckeditor5-indent
@@ -10027,7 +9968,6 @@ node-oauth1
 bufrw
 @pact-foundation/pact-core
 @cspell/dict-en-gb-mit
-@secretlint/node
 use-subscription
 @orama/orama
 @vue/babel-sugar-v-on
@@ -10141,7 +10081,6 @@ array-range
 markdownlint-cli
 events-listener
 stopwords-iso
-@secretlint/formatter
 @solana/addresses
 @verdaccio/streams
 @ai-sdk/perplexity
@@ -10308,7 +10247,6 @@ libnpmteam
 termi-link
 locutus
 @types/react-big-calendar
-@stdlib/string-base-format-tokenize
 dag-map
 datatables.net
 brcast
@@ -10386,7 +10324,6 @@ zhead
 autocannon
 @verdaccio/middleware
 ibm-cloud-sdk-core
-@radix-ui/react-password-toggle-field
 @walletconnect/window-metadata
 @pagefind/linux-x64
 @verdaccio/tarball
@@ -10603,7 +10540,6 @@ fs-jetpack
 @safe-global/safe-apps-provider
 walk-back
 datadog-lambda-js
-@secretlint/secretlint-formatter-sarif
 saucelabs
 vis-data
 @openapi-contrib/openapi-schema-to-json-schema

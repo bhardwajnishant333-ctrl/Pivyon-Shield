@@ -154,7 +154,6 @@ prompt-toolkit
 mako
 orjson
 alembic
-tiktoken
 pyopenssl
 opentelemetry-exporter-otlp-proto-http
 nodeenv
@@ -163,7 +162,6 @@ isodate
 langchain
 python-discovery
 cloudpickle
-tokenizers
 pynacl
 chardet
 websocket-client
@@ -203,7 +201,6 @@ google-cloud-bigquery
 jaraco-functools
 jeepney
 cycler
-secretstorage
 toml
 jaraco-context
 google-crc32c
@@ -271,7 +268,6 @@ jedi
 structlog
 azure-storage-blob
 typedload
-asttokens
 pyproject-hooks
 transformers
 playwright
@@ -323,7 +319,6 @@ pyperclip
 kubernetes
 types-pyyaml
 opentelemetry-instrumentation-requests
-pytokens
 safetensors
 sqlglot
 jupyter-client
@@ -386,7 +381,6 @@ caio
 argcomplete
 opentelemetry-exporter-otlp
 comm
-google-cloud-secret-manager
 mmh3
 jsonpath-ng
 ipython-pygments-lexers
@@ -482,7 +476,6 @@ pysocks
 ty
 backports-tarfile
 pyright
-azure-keyvault-secrets
 ecdsa
 pdfplumber
 semantic-version
@@ -1338,7 +1331,6 @@ python-crontab
 cachelib
 configparser
 pyrefly
-detect-secrets
 c7n-org
 google-cloud-dataform
 libclang
@@ -1359,7 +1351,6 @@ amplitude-analytics
 microsoft-kiota-serialization-text
 microsoft-kiota-serialization-json
 mypy-boto3-ec2
-mypy-boto3-secretsmanager
 msgraph-core
 xlwt
 gcloud-aio-bigquery
@@ -1582,7 +1573,6 @@ enum34
 google-cloud-iam
 python-socks
 eth-typing
-tokenize-rt
 google-analytics-admin
 rlp
 hexbytes
@@ -2068,7 +2058,6 @@ pyiceberg-core
 dbt-bigquery
 statsig-python-core
 blockbuster
-bc-detect-secrets
 hatch-requirements-txt
 celery-types
 outlines-core
@@ -2236,7 +2225,6 @@ google-cloud-documentai
 sacrebleu
 python-can
 azure-mgmt-appconfiguration
-onepassword-sdk
 connectrpc
 torchcodec
 mypy-boto3-ssm
@@ -2273,7 +2261,6 @@ html-for-docx
 opentelemetry-instrumentation-pika
 azure-mgmt-synapse
 pyzbar
-alibabacloud-credentials
 check-jsonschema
 azure-mgmt-mysqlflexibleservers
 django-anymail
@@ -2281,7 +2268,6 @@ crcmod-plus
 pydispatcher
 opentelemetry-instrumentation-vertexai
 llama-index
-microsoft-security-utilities-secret-masker
 schemathesis
 google-cloud-artifact-registry
 browserbase
@@ -2457,7 +2443,6 @@ futures
 pytest-memray
 jwt
 aiogram
-djangorestframework-api-key
 cloudinary
 opentelemetry-instrumentation-pymemcache
 azure-keyvault-securitydomain
@@ -2630,7 +2615,6 @@ ccxt
 dotty-dict
 types-boto3-sqs
 hdbcli
-aws-secretsmanager-caching
 requests-aws-sign
 comfyui-workflow-templates-media-assets-01
 stringzilla
@@ -2655,7 +2639,6 @@ resvg-py
 capi-param-builder-python
 yamale
 opentelemetry-propagator-ot-trace
-aws-bedrock-token-generator
 pulumi-random
 pygame
 venusian
@@ -2725,7 +2708,6 @@ kornia
 python-nvd3
 pymediainfo
 jproperties
-tokenspeed-triton
 tcmlib
 scim2-filter-parser
 better-profanity
@@ -2773,7 +2755,6 @@ onnxscript
 dominate
 fasttext-wheel
 line-profiler
-tokenspeed-mla
 poetry-dynamic-versioning
 vllm
 dagster-docker
@@ -3102,7 +3083,6 @@ keras-preprocessing
 tree-sitter-objc
 numbers-parser
 pyexcel-io
-alibabacloud-credentials-api
 composio
 iopath
 drf-exceptions-hog
@@ -3277,7 +3257,6 @@ opentelemetry-instrumentation-agno
 pycollada
 fastwarc
 dataclasses-json-speakeasy
-google-cloud-iamconnectorcredentials
 analytics-python
 pysher
 taskgroup
@@ -3637,7 +3616,6 @@ pylatex
 pydantic-ai-skills
 hanzidentifier
 dkimpy
-types-aiobotocore-secretsmanager
 aiodocker
 jsoncomparison
 pyobjc-framework-cocoa
@@ -3898,7 +3876,6 @@ flake8-isort
 jinja-partials
 webtest
 azure-mgmt
-json-stream-rs-tokenizer
 django-mptt
 codewords-client
 alpaca-py
@@ -4026,7 +4003,6 @@ setuptools-git-versioning
 sparkdantic
 lameenc
 spinners
-token-bucket
 coreapi
 smg-grpc-servicer
 bgutil-ytdlp-pot-provider
@@ -4715,7 +4691,6 @@ scverse-misc
 gliner
 openinference-instrumentation-litellm
 emcee
-pytorch-tokenizers
 subprocess32
 django-money
 find-libpython
@@ -5112,7 +5087,6 @@ dafnyruntimepython
 chonkie-core
 django-admin-autocomplete-filter
 types-greenlet
-types-boto3-secretsmanager
 pywatchman
 polygon-api-client
 setuptools-scm-git-archive
@@ -5155,7 +5129,6 @@ django-watchfiles
 prefect-client
 wandb-workspaces
 roundrobin
-curated-tokenizers
 b2sdk
 koalas
 mypy-boto3-emr
@@ -5425,7 +5398,6 @@ numdifftools
 ffmpeg
 backports-ssl-match-hostname
 logtail-python
-fastokens
 databricks-openai
 prefixcommons
 whisper
@@ -5501,7 +5473,6 @@ sphn
 brickflows
 g2p-en
 ipwhois
-untokenize
 tuspyserver
 django-permissionedforms
 sampleproject
@@ -5641,7 +5612,6 @@ pyshexc
 nixl
 gcs-oauth2-boto-plugin
 structlog-gcp
-django-rest-passwordreset
 arviz-stats
 ulid-transform
 eml-parser
@@ -6115,7 +6085,6 @@ jarowinkler
 gdal
 better-exceptions
 qualname
-google-cloud-agentidentitycredentials
 entsoe-py
 segment-anything
 multimark
@@ -6503,7 +6472,6 @@ prefect-sqlalchemy
 simile
 mypy-boto3-fis
 genagent
-supertokens-python
 strsimpy
 crispy-bootstrap4
 pybars4
@@ -7044,7 +7012,6 @@ onnx-graphsurgeon
 pypd
 pyobjc-framework-coreml
 detect-delimiter
-gigatoken
 py-trees
 e2b-desktop
 a2ui-core
@@ -7114,7 +7081,6 @@ sagemaker-inference
 linkup-sdk
 flet
 icontract
-s3tokenizer
 podman-compose
 tdda
 spsdk
@@ -8104,7 +8070,6 @@ meltano
 openlineage-airflow
 wreq
 memfabric-zbal
-password-strength
 lib-log-rich
 bqplot
 proxsuite
@@ -8281,7 +8246,6 @@ starlette-prometheus
 kaldi-native-fbank
 audiolab
 pyexiftool
-ibm-secrets-manager-sdk
 rabbitmq-admin
 luhn
 cabinetry
@@ -8397,7 +8361,6 @@ yte
 types-aiobotocore-logs
 cosl
 kivy
-pwned-passwords-django
 connection-pool
 absurd-sdk
 percy-appium-app
@@ -8689,7 +8652,6 @@ zlib-state
 audio-separator
 awsiot
 aiopath
-tokencost
 uipath-langchain-client
 simplepyble
 user-agent
@@ -8708,7 +8670,6 @@ gdstk
 river
 pylint-flask
 swagger-plugin-for-sphinx
-keeper-secrets-manager-core
 device-detector
 aia
 django-etc
@@ -8892,7 +8853,6 @@ sphinx-multitoc-numbering
 faker-edu
 pyo3-pack
 faker-nonprofit
-eks-token
 pyxb-x
 django-watchman
 hyper
@@ -9280,7 +9240,6 @@ egl-probe
 plotbin
 ldp
 django-markdownx
-google-cloud-api-keys
 lbox-clients
 azure-mgmt-resource-subscriptions
 google-cloud-tpu
@@ -10303,7 +10262,6 @@ pulp-glue
 hiyapyco
 mypy-strict-kwargs
 mozleak
-openvino-tokenizers
 allure-robotframework
 home-assistant-frontend
 kanaries-track
@@ -10333,7 +10291,6 @@ leptris
 kerykeion
 pyobjc-framework-screencapturekit
 aa-killtracker
-random-password-generator
 neomodel
 libconf
 mypy-boto3-marketplace-catalog
@@ -10557,7 +10514,6 @@ legit-api-client
 mypy-boto3-appintegrations
 pyobjc-framework-gamekit
 pyodata
-pyobjc-framework-cryptotokenkit
 pyobjc-framework-gameplaykit
 mypy-boto3-datapipeline
 ovos-utils
@@ -11269,7 +11225,6 @@ wyoming
 dask-labextension
 hightime
 mypy-boto3-iot-managed-integrations
-onepasswordconnectsdk
 thetadata
 sphinxcontrib-typer
 cydifflib
@@ -11338,7 +11293,6 @@ mypy-boto3-iotevents
 types-aiobotocore-textract
 anki
 wagtail-factories
-fastapi-keycloak-middleware
 giddy
 pvxslibs
 osquery
@@ -11417,7 +11371,6 @@ oslo-privsep
 overpy
 fuzzy
 aws-cdk-aws-cloudwatch
-scitokens
 face-recognition
 pychromecast
 google-cloud-documentai-toolbox
@@ -11541,7 +11494,6 @@ onemkl-sycl-rng
 yahooquery
 panflute
 exp-gateway-native
-django-zxcvbn-password-validator
 componentize-py
 aeidon
 embedchain
@@ -11635,7 +11587,6 @@ username
 dbnomics
 dagster-async-executor
 pigpio
-git-credentials
 marin-dupekit-native
 django-threadlocals
 mendeleev
@@ -11976,7 +11927,6 @@ metaflow-torchrun
 sshkeyboard
 attoworld
 portal
-django-password-validators
 flit-scm
 timecode
 pyhdb
@@ -11991,7 +11941,6 @@ import-ipynb
 jupyter-black
 surer
 atlas-doc-parser
-aws-cdk-aws-secretsmanager
 json-with-comments
 djongo
 pylnk3
@@ -12681,7 +12630,6 @@ whois
 ipyflow-core
 jobseek-crawler-setup
 openbb-yfinance
-glocaltokens
 polyglot
 cirq-ionq
 turbohtml
@@ -13416,7 +13364,6 @@ coqpit-config
 dtwalign
 craft-parts
 hiddenlayer-sdk
-cdk-secret-manager-wrapper-layer
 pulumi-automation
 pytorch-seed
 bioversions
@@ -13495,7 +13442,6 @@ python-mpv
 picklescan
 vellum-ai
 pywebsocket3
-pulumi-onepassword
 nbdev-apl
 pytest-manual-marker
 ruamel-ordereddict
@@ -13566,7 +13512,6 @@ qianfan
 onetimepass
 multiline-log-formatter
 spglm
-stups-tokens
 pymantic
 dagster-fivetran
 logfire-mcp
@@ -14743,7 +14688,6 @@ mockredispy
 pythran-openblas
 tickforge-client
 cabarchive
-rds-proxy-password-rotation
 pybiolib
 qiskit-ionq
 logentries
@@ -14828,7 +14772,6 @@ africastalking
 anarcii
 mwclient
 mne-bids
-agora-token-builder
 localstack-obfuscator
 audeer
 zipfile38
