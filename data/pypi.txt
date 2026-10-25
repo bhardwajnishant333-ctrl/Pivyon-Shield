@@ -147,7 +147,6 @@ requests-toolbelt
 msgpack
 fonttools
 rsa
-hf-xet
 werkzeug
 scikit-learn
 prompt-toolkit
@@ -998,7 +997,6 @@ mkdocs
 rdflib
 google-cloud-run
 hydra-core
-ghp-import
 tree-sitter-bash
 ray
 python-gnupg
@@ -1838,7 +1836,6 @@ requests-cache
 pipdeptree
 pytest-aiohttp
 nats-py
-xai-sdk
 opentelemetry-instrumentation-pymongo
 docx2txt
 sqlparams
@@ -2111,7 +2108,6 @@ opentelemetry-instrumentation-aws-lambda
 convertdate
 docling-parse
 intelhex
-hf-transfer
 influxdb-client
 apache-airflow-providers-amazon
 fastapi-mcp
@@ -2349,7 +2345,6 @@ ip3country
 docling
 plaid-python
 types-regex
-hf-gradio
 sglang
 ast-grep-cli
 tree-sitter-powershell
@@ -12662,7 +12657,6 @@ uproot3-methods
 cardscan-client
 wsgiproxy2
 business-rules
-hf-doc-builder
 ovos-number-parser
 mypy-boto3-evidently
 pytest-slow-first

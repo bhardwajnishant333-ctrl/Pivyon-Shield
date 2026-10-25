@@ -190,7 +190,6 @@ levn
 keyv
 get-proto
 csstype
-npm-run-path
 fast-json-stable-stringify
 reusify
 @babel/helper-plugin-utils
@@ -1448,7 +1447,6 @@ pg-pool
 obug
 enquirer
 simple-swizzle
-npm-package-arg
 universal-user-agent
 @unrs/resolver-binding-linux-x64-musl
 @aws-sdk/middleware-flexible-checksums
@@ -1598,7 +1596,6 @@ duplexer
 micromark-extension-gfm-footnote
 http-proxy
 clone-deep
-npm-normalize-package-bin
 remark-stringify
 is-accessor-descriptor
 pretty-ms
@@ -2229,15 +2226,12 @@ expand-brackets
 engine.io
 stackback
 sort-keys
-npm-install-checks
 @tanstack/store
 @types/responselike
 @types/html-minifier-terser
 @sentry/opentelemetry
 @opentelemetry/instrumentation-kafkajs
-npm-bundled
 node-emoji
-npm-pick-manifest
 bonjour-service
 prr
 @shikijs/engine-oniguruma
@@ -2277,7 +2271,6 @@ klona
 @inquirer/checkbox
 @npmcli/git
 socket.io
-npm-packlist
 @types/serve-index
 is-module
 seroval-plugins
@@ -2391,7 +2384,6 @@ isbinaryfile
 header-case
 capital-case
 css-line-break
-npm-registry-fetch
 strip-eof
 split
 @types/superagent
@@ -4096,7 +4088,6 @@ esast-util-from-estree
 ast-kit
 mdast-util-math
 react-freeze
-npm-run-all
 state-local
 @nx/nx-linux-x64-musl
 path
@@ -6531,7 +6522,6 @@ hey-listen
 @nx/vite
 semver-greatest-satisfied-range
 hammerjs
-npm-run-all2
 @expo/devcert
 @motionone/dom
 @nivo/colors
@@ -6922,7 +6912,6 @@ mixpanel-browser
 rolldown-plugin-dts
 rtl-detect
 select
-npm-conf
 simple-lru-cache
 eslint-plugin-tailwindcss
 @peculiar/asn1-pkcs8
@@ -9678,7 +9667,6 @@ cssauron
 remark-mdx-frontmatter
 @aws-sdk/client-scheduler
 topo
-npm-check-updates
 @ucast/mongo2js
 @neondatabase/serverless
 react-imask
@@ -9767,7 +9755,6 @@ jshint
 apollo-server-express
 jest-transform-stub
 @types/lodash.clonedeep
-npm-profile
 mdast-util-compact
 tiny-worker
 @parcel/packager-html
@@ -9856,7 +9843,6 @@ lz-utils
 @base-org/account
 @prisma/schema-files-loader
 simplebar-react
-npm-user-validate
 splaytree-ts
 react-input-mask
 @connectrpc/connect
@@ -10259,7 +10245,6 @@ transliteration
 imagemin-svgo
 @types/reach__router
 @thi.ng/errors
-npm-audit-report
 @tiptap/extension-font-family
 @hey-api/types
 @types/xml-encryption
@@ -10446,7 +10431,6 @@ semver-intersect
 varuint-bitcoin
 @tiptap/extension-typography
 expo-network
-npm-path
 zstddec
 @microsoft/applicationinsights-common
 @nuxt/eslint-config
