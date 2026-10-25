@@ -1,0 +1,1 @@
+"file_path" *: *"[^"]*(package\.json|requirements[^"/]*\.(txt|in)|constraints\.txt|pyproject\.toml|cargo\.toml|gemfile|gems\.rb|go\.mod|composer\.json)"

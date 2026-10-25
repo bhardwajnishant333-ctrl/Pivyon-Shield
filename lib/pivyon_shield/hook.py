@@ -18,11 +18,11 @@ from .policy import RANK, Verdict, evaluate_all
 MAX_PACKAGES = 25  # beyond this (e.g. a 200-line requirements file) check the first N
 
 
-def requests_for(payload: dict) -> List[Request]:
+def requests_for(payload: dict, cfg=None) -> List[Request]:
     tool = payload.get("tool_name") or ""
     tin = payload.get("tool_input") or {}
     cwd = payload.get("cwd") or os.getcwd()
-    ctx = Context(cwd)
+    ctx = Context(cwd, cfg=cfg)
     if tool == "Bash":
         return packages_in_command(tin.get("command") or "", ctx)
     if tool in ("Write", "Edit", "MultiEdit"):
@@ -37,7 +37,7 @@ def requests_for(payload: dict) -> List[Request]:
         after = manifests.apply_edit(tool, tin, before)
         if after is None:
             return []
-        ctx = Context(os.path.dirname(path) or cwd)
+        ctx = Context(os.path.dirname(path) or cwd, cfg=cfg)
         out = []
         for (eco, name), ver in manifests.added_or_changed(path, before, after).items():
             custom = (eco == "npm" and (ctx.npm_custom_registry or ctx.npm_scope_private(name))) or (
@@ -104,7 +104,7 @@ def main(stdin=None, stdout=None) -> int:
         cfg = config.load(cwd)
         if cfg.mode == "off":
             return 0
-        reqs = requests_for(payload)[:MAX_PACKAGES]
+        reqs = requests_for(payload, cfg)[:MAX_PACKAGES]
         if not reqs:
             return 0
         result = decide(evaluate_all(reqs, cfg), cfg.mode)

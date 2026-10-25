@@ -2,7 +2,7 @@
 name: audit
 description: Audit every locked dependency in the project for known vulnerabilities and malware (OSV.dev, free, no key), then fix them with the smallest safe upgrades and prove the fix. Use when the user asks to audit, scan or secure dependencies, check for CVEs or vulnerable/malicious packages, run "npm audit"/"pip-audit"-style checks across ecosystems, prepare a release or security review, or after a supply-chain incident makes the news.
 argument-hint: "[path] [--fix]"
-allowed-tools: Bash(python3 ${CLAUDE_PLUGIN_ROOT}/scripts/shield.py *), Bash(python ${CLAUDE_PLUGIN_ROOT}/scripts/shield.py *), Read, Grep, Glob, Edit
+allowed-tools: Bash(python3 ${CLAUDE_PLUGIN_ROOT}/scripts/shield.py *), Bash(python ${CLAUDE_PLUGIN_ROOT}/scripts/shield.py *), Read, Grep, Glob
 ---
 
 # Dependency audit and fix

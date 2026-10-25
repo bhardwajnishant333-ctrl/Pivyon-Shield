@@ -84,14 +84,8 @@ _NOT_FOUND_MARK = {"__pivyon_shield_not_found__": True}
 
 
 def _ssl_context() -> ssl.SSLContext:
-    ctx = ssl.create_default_context()
-    bundle = os.environ.get("SSL_CERT_FILE") or os.environ.get("REQUESTS_CA_BUNDLE")
-    if bundle and os.path.exists(bundle):
-        try:
-            ctx.load_verify_locations(bundle)
-        except (OSError, ssl.SSLError):
-            pass
-    return ctx
+    # The system trust store; OpenSSL honours SSL_CERT_FILE on its own.
+    return ssl.create_default_context()
 
 
 def request_json(

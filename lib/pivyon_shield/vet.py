@@ -122,7 +122,7 @@ def main(argv: List[str], mode: str) -> int:
         default = ALIASES.get(args.ecosystem.lower(), args.ecosystem)
         reqs = [parse_target(p, default) for p in args.packages]
     else:
-        reqs = packages_in_command(args.command, Context(os.getcwd()))
+        reqs = packages_in_command(args.command, Context(os.getcwd(), cfg=cfg))
         if not reqs:
             print("No registry packages found in that command.")
             return 0

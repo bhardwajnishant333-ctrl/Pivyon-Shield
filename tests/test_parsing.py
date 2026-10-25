@@ -86,18 +86,32 @@ class CommandParsing(unittest.TestCase):
         self.assertEqual(pkgs("npm install foo # comment pip install bar"), [("npm", "foo", None)])
 
     def test_private_registries(self):
-        r = packages_in_command("npm install internal-lib --registry https://npm.corp", Context("/x", {}))
+        from pivyon_shield.config import Config
+
+        r = packages_in_command("npm install internal-lib --registry https://npm.corp", Context("/x", {}, Config()))
         self.assertTrue(r[0].custom_index)
-        r = packages_in_command("pip install corp-lib --extra-index-url https://pypi.corp", Context("/x", {}))
+        r = packages_in_command("pip install corp-lib --extra-index-url https://pypi.corp", Context("/x", {}, Config()))
         self.assertTrue(r[0].custom_index)
-        r = packages_in_command("pip install corp-lib", Context("/x", {"PIP_INDEX_URL": "https://pypi.corp/simple"}))
+        r = packages_in_command("pip install corp-lib", Context("/x", {}, Config(private_pypi_index=True)))
         self.assertTrue(r[0].custom_index)
+        r = packages_in_command("npm i @corp/ui react", Context("/x", {}, Config(private_npm_scopes=["@corp"])))
+        self.assertEqual([x.custom_index for x in r], [True, False])
+        self.assertEqual(pkgs("go get corp.example.com/lib", env={"GOPRIVATE": "corp.example.com"}), [])
+
+    def test_never_reads_package_manager_credentials(self):
         with tempfile.TemporaryDirectory() as d:
             with open(os.path.join(d, ".npmrc"), "w") as fh:
-                fh.write("@corp:registry=https://npm.corp/\n")
-            r = packages_in_command("npm i @corp/ui react", Context(d, {}))
-            self.assertEqual([x.custom_index for x in r], [True, False])
-        self.assertEqual(pkgs("go get corp.example.com/lib", env={"GOPRIVATE": "corp.example.com"}), [])
+                fh.write("@corp:registry=https://npm.corp/\n//npm.corp/:_authToken=secret\n")
+            r = packages_in_command("npm i @corp/ui", Context(d, {"PIP_INDEX_URL": "https://u:tok@pypi.corp"}))
+            self.assertFalse(r[0].custom_index)
+
+    def test_private_settings_from_project_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            with open(os.path.join(d, ".pivyon-shield.json"), "w") as fh:
+                fh.write('{"private_npm_scopes": ["@corp"], "private_pypi_index": true}')
+            ctx = Context(d, {})
+            self.assertTrue(packages_in_command("npm i @corp/ui", ctx)[0].custom_index)
+            self.assertTrue(packages_in_command("pip install x", ctx)[0].custom_index)
 
 
 class Manifests(unittest.TestCase):

@@ -5872,7 +5872,6 @@ cupy-cuda13x
 pytest-homeassistant-custom-component
 django-sendgrid-v5
 case-conversion
-pypi-timemachine
 posix-ipc
 rapids-logger
 srptools
@@ -8603,7 +8602,6 @@ sqlalchemy-filters
 hydra-zen
 tfx-bsl
 montecarlodata
-pypi-simple
 lifetimes
 fastapi-events
 djangorestframework-recursive
@@ -9450,7 +9448,6 @@ pyopencl
 cronexpr
 traceml
 tembo-pgmq-python
-pypi-json
 azure-maps-search
 ormar-utils
 scikit-learn-intelex
@@ -12208,7 +12205,6 @@ mypy-boto3-wickr
 snakemake-interface-logger-plugins
 sphinx-multiversion
 aws-cdk-aws-acmpca
-pypi-attestations
 sshuttle
 mypy-boto3-partnercentral-account
 selenium-screenshot
@@ -13816,7 +13812,6 @@ ansys-dpf-core
 robotcode-plugin
 sciqlopplots
 pynisher
-sk-video
 arcade-mcp
 scweet
 shortid

@@ -7,7 +7,10 @@
       "new_package_days": 30,     // ask before installing a non-popular package younger than this
       "block_vulnerable": "critical", // ask on known vulns at/above: critical|high|medium|low|never
       "allow": ["npm:my-internal-pkg", "PyPI:our-tool"],
-      "deny":  ["npm:event-stream"]
+      "deny":  ["npm:event-stream"],
+      "private_npm_scopes": ["@mycompany"],  // scopes served by a private registry
+      "private_npm_registry": false,         // all npm installs go to a private registry
+      "private_pypi_index": false            // pip/uv use a private or extra index
     }
 """
 
@@ -27,6 +30,9 @@ class Config:
     block_vulnerable: str = "critical"
     allow: List[str] = field(default_factory=list)
     deny: List[str] = field(default_factory=list)
+    private_npm_scopes: List[str] = field(default_factory=list)
+    private_npm_registry: bool = False
+    private_pypi_index: bool = False
 
     def _match(self, entries: List[str], ecosystem: str, name: str) -> bool:
         low = name.lower()
@@ -57,9 +63,12 @@ def _merge(cfg: Config, data: dict) -> None:
             setattr(cfg, key, float(data[key]))
     if data.get("block_vulnerable") in ("critical", "high", "medium", "low", "never"):
         cfg.block_vulnerable = data["block_vulnerable"]
-    for key in ("allow", "deny"):
+    for key in ("allow", "deny", "private_npm_scopes"):
         if isinstance(data.get(key), list):
             getattr(cfg, key).extend(str(x) for x in data[key])
+    for key in ("private_npm_registry", "private_pypi_index"):
+        if isinstance(data.get(key), bool):
+            setattr(cfg, key, data[key])
 
 
 def _read(path: str) -> Optional[dict]:

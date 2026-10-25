@@ -1,0 +1,1 @@
+(^|[^A-Za-z0-9_-])(npm|pnpm|yarn|bun|npx|pnpx|bunx|pip[0-9.]*|python[0-9.]*|py|uv|uvx|pipx|poetry|pdm|rye|cargo|go|gem|bundle|composer)([^A-Za-z0-9_-]|$)

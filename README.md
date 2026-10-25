@@ -81,8 +81,10 @@ Pivyon Shield sits at that boundary. It's a `PreToolUse` hook, so it runs
 
 It understands compound shell lines (`&&`, `;`, pipes, `$(…)`), `sudo` and
 `env` prefixes, and ignores heredoc bodies, quoted strings, local paths, git
-URLs and tarballs. It also respects private registries: scoped `.npmrc`
-registries, `--registry`, `--index-url`/`PIP_INDEX_URL`, and `GOPRIVATE`.
+URLs and tarballs. It also respects private registries: `--registry` and
+`--index-url` flags, `GOPRIVATE`, and the private-registry settings below. It
+never reads `.npmrc`, `pip.conf` or index-URL variables, because those hold
+auth tokens.
 Edits to manifests are diffed, so only the dependencies an edit adds or
 changes get checked.
 
@@ -118,7 +120,10 @@ Optional. Put this in `.pivyon-shield.json` at the project root, or in
   "new_package_days": 30,
   "block_vulnerable": "critical",
   "allow": ["npm:my-internal-tool", "PyPI:our-private-lib"],
-  "deny": ["npm:event-stream"]
+  "deny": ["npm:event-stream"],
+  "private_npm_scopes": ["@mycompany"],
+  "private_npm_registry": false,
+  "private_pypi_index": false
 }
 ```
 
@@ -128,6 +133,10 @@ Optional. Put this in `.pivyon-shield.json` at the project root, or in
   it to `0` to turn the cooldown off.
 - `block_vulnerable`: the lowest known-vulnerability severity that triggers a
   prompt. One of `critical`, `high`, `medium`, `low` or `never`.
+- `private_npm_scopes`, `private_npm_registry`, `private_pypi_index`: tell it
+  which packages come from your company's private registry, so a name that
+  isn't on the public registry gets a warning about dependency confusion
+  instead of a block.
 
 Every setting can also be set through an environment variable:
 `PIVYON_SHIELD_MODE`, `PIVYON_SHIELD_COOLDOWN_HOURS`,

@@ -3,24 +3,24 @@
 #
 # Cheap pre-filter first: most Bash calls (ls, git, tests) and most edits
 # never touch a package manager or a manifest, so they exit here in a few
-# milliseconds without starting Python. Anything this lets through is parsed
+# milliseconds without starting Python. The patterns are in prefilter-*.txt. Anything this lets through is parsed
 # properly by the Python side, which is the real judge.
 set -u
 
 input="$(cat)"
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 case "$input" in
   *'"tool_name":"Bash"'* | *'"tool_name": "Bash"'*)
-    printf '%s' "$input" | grep -Eq '(^|[^A-Za-z0-9_-])(npm|pnpm|yarn|bun|npx|pnpx|bunx|pip[0-9.]*|python[0-9.]*|py|uv|uvx|pipx|poetry|pdm|rye|cargo|go|gem|bundle|composer)([^A-Za-z0-9_-]|$)' || exit 0
+    printf '%s' "$input" | grep -Eq -f "$here/prefilter-commands.txt" || exit 0
     ;;
   *)
-    printf '%s' "$input" | grep -Eiq '"file_path" *: *"[^"]*(package\.json|requirements[^"/]*\.(txt|in)|constraints\.txt|pyproject\.toml|cargo\.toml|gemfile|gems\.rb|go\.mod|composer\.json)"' || exit 0
+    printf '%s' "$input" | grep -Eiq -f "$here/prefilter-files.txt" || exit 0
     ;;
 esac
 
 export PYTHONUTF8=1
 export PYTHONDONTWRITEBYTECODE=1
-here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 script="$here/../scripts/shield.py"
 if command -v cygpath >/dev/null 2>&1; then
   script="$(cygpath -w "$script")"

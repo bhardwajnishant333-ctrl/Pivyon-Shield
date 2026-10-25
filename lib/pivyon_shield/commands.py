@@ -477,34 +477,21 @@ HANDLERS["composer"] = _composer
 
 
 class Context:
-    """What the environment says about private registries."""
+    """Which registries are private, from the user's .pivyon-shield.json.
 
-    def __init__(self, cwd: str, env: Optional[dict] = None):
+    Package managers' own config files and index-URL variables are never
+    read: they routinely hold auth tokens.
+    """
+
+    def __init__(self, cwd: str, env: Optional[dict] = None, cfg=None):
+        from . import config
+
         self.cwd = cwd or os.getcwd()
         env = os.environ if env is None else env
-        self.env = env
-        self.npm_scopes: Set[str] = set()
-        self.npm_custom_registry = False
-        reg = env.get("npm_config_registry") or env.get("NPM_CONFIG_REGISTRY") or ""
-        if reg and "registry.npmjs.org" not in reg and "registry.yarnpkg.com" not in reg:
-            self.npm_custom_registry = True
-        for rc in (os.path.join(self.cwd, ".npmrc"), os.path.join(os.path.expanduser("~"), ".npmrc"),
-                   os.path.join(self.cwd, ".yarnrc.yml")):
-            try:
-                with open(rc, encoding="utf-8", errors="replace") as fh:
-                    for line in fh:
-                        line = line.strip()
-                        m = re.match(r"^(@[\w.-]+):registry\s*=", line) or re.match(r"^[\"']?(@[\w.-]+)[\"']?:\s*$", line)
-                        if m:
-                            self.npm_scopes.add(m.group(1))
-                        m = re.match(r"^(?:registry|npmRegistryServer)\s*[=:]\s*[\"']?(\S+?)[\"']?$", line)
-                        if m and "registry.npmjs.org" not in m.group(1) and "registry.yarnpkg.com" not in m.group(1):
-                            self.npm_custom_registry = True
-            except OSError:
-                pass
-        idx = env.get("PIP_INDEX_URL") or env.get("UV_INDEX_URL") or env.get("UV_DEFAULT_INDEX") or ""
-        extra = env.get("PIP_EXTRA_INDEX_URL") or env.get("UV_EXTRA_INDEX_URL") or env.get("UV_INDEX") or ""
-        self.pypi_custom_index = bool((idx and "pypi.org" not in idx) or extra)
+        cfg = cfg if cfg is not None else config.load(self.cwd, env)
+        self.npm_scopes: Set[str] = set(cfg.private_npm_scopes)
+        self.npm_custom_registry = cfg.private_npm_registry
+        self.pypi_custom_index = cfg.private_pypi_index
         self.go_private_patterns = [
             p.strip() for p in (env.get("GOPRIVATE", "") + "," + env.get("GONOPROXY", "")).split(",") if p.strip()
         ]
