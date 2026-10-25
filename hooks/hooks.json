@@ -1,0 +1,17 @@
+{
+  "description": "pivyon-shield: vet every package before Claude installs it or adds it to a manifest",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/run.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

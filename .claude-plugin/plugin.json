@@ -1,0 +1,26 @@
+{
+  "name": "pivyon-shield",
+  "displayName": "Pivyon Shield",
+  "version": "1.0.0",
+  "description": "Keep your Claude Code development safe from malware, without thinking about it. Zero setup, free forever. Pivyon Shield checks every package Claude installs and blocks the fake and malicious ones before they can compromise your code or your machine.",
+  "author": {
+    "name": "Pivyon",
+    "email": "hello@pivyon.com",
+    "url": "https://pivyon.com"
+  },
+  "homepage": "https://github.com/bhardwajnishant333-ctrl/pivyon-shield",
+  "repository": "https://github.com/bhardwajnishant333-ctrl/pivyon-shield",
+  "license": "MIT",
+  "keywords": [
+    "security",
+    "supply-chain",
+    "slopsquatting",
+    "typosquatting",
+    "malware",
+    "dependencies",
+    "osv",
+    "npm",
+    "pypi",
+    "cargo"
+  ]
+}

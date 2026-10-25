@@ -1,0 +1,37 @@
+{
+  "name": "pivyon",
+  "owner": {
+    "name": "Pivyon",
+    "email": "hello@pivyon.com",
+    "url": "https://pivyon.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by Pivyon (pivyon.com).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "pivyon-shield",
+      "displayName": "Pivyon Shield",
+      "source": "./",
+      "description": "Keep your Claude Code development safe from malware, without thinking about it. Zero setup, free forever. Pivyon Shield checks every package Claude installs and blocks the fake and malicious ones before they can compromise your code or your machine.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Pivyon",
+        "url": "https://pivyon.com"
+      },
+      "category": "security",
+      "keywords": [
+        "security",
+        "supply-chain",
+        "slopsquatting",
+        "typosquatting",
+        "malware",
+        "dependencies",
+        "osv"
+      ],
+      "homepage": "https://github.com/bhardwajnishant333-ctrl/pivyon-shield",
+      "license": "MIT"
+    }
+  ]
+}
