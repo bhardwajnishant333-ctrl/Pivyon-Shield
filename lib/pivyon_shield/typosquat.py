@@ -41,7 +41,8 @@ def _load(ecosystem: str) -> Tuple[List[str], FrozenSet[str]]:
             for line in fh:
                 line = line.strip()
                 if line and not line.startswith("#"):
-                    names.append(normalize(ecosystem, line))
+                    # pypi.txt stores dashes as spaces (see its header).
+                    names.append(normalize(ecosystem, line.replace(" ", "-")))
     except OSError:
         return [], frozenset()
     return names, frozenset(names)
